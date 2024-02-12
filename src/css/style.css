@@ -1,0 +1,195 @@
+body,p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #264e70;
+    font-family:'Roboto';
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+.header {
+background-position: center;
+background-size: cover;
+}
+
+/* Logo */
+#logo {
+    max-width: 30%;
+}
+
+
+/* "Bienvenido a mi sitio favorito" */
+.tagline {
+    font-size: 35px;
+}
+#hello {
+    font-size: 20px;
+
+}
+#ThorIntro{
+  float: left;
+  margin: 0px 0px 0 100px ;
+}
+
+/* Menu */
+#bienvenida:target, #birthday:target, #paseos:target, #guarderia:target{
+    display: block;
+}
+#contacto_enviado{
+  display: block;
+}
+#resenas:target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#conocenos:target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bienvenida, #conocenos, #resenas, #birthday, #paseos, #guarderia, #contacto_enviado{
+    display:none;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: #ffdaad;
+    padding: 0;
+  }
+  .menu li {
+    flex: 1 1 0;
+  }
+
+  .menu a {
+    font-family: 'Roboto';
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #264e70;
+    user-select: none;
+  }
+  .menu li:hover {
+    background: #fbd4a5;
+  }
+  .submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background: #fbd4a5;
+    position: relative
+  }
+
+  .menu > li:hover > .submenu {
+    display: block;
+  }
+
+
+/* Bienvenida */
+.container_bienvenida{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    max-width: 300px;
+    max-height: 200px;
+    text-align: center;
+  }
+  #bienvenida_titulo{
+    font-size: 50px;
+}
+
+/* Conócenos */
+.contenedor{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas:
+    "header   header header"
+    "section  main main"
+    "footer footer footer";
+    
+    border: 6px solid #fbd4a5;
+    align-self: center;
+    text-align: center;
+    font-size: 17px;
+    padding: 12px;
+    gap: 7px;  
+    width: 500px;
+    height: 300px;  
+    margin: 0;
+}
+.cabecera{
+    grid-area: header;
+    font-size: 25px;
+}
+.foto_contenedor{
+    grid-area: section;
+    display: block;
+    max-width: 100%;
+    max-height: 70%;
+    float:left;
+    margin: 0 0 0 0;
+}
+
+.texto_contenedor{
+    grid-area: main;
+    text-align: center;
+    font-size: 15px;
+    display:block;
+}
+
+/* Conócenos */
+#contenedor_familia{
+    width: 700px;
+    height: 300px;
+}
+#fotofam{
+    max-width: 550px;
+
+}
+
+/* Reseñas */
+#logo_instagram{
+    max-width: 20%;
+    display: block;
+}
+
+/* Cumpleaños */
+
+/* Paseos */
+.boton:hover {
+    background-color: #fbbf76;
+}
+.boton {
+    font-family: sans-serif;
+    color: white;
+    background-color: #fbd3a2;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.contenedor2{
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "cabecera cabecera"
+    "main main ";
+    
+}
+@media (max-width: 1200px) and (min-width:400px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "footer";
+    }
+}
+

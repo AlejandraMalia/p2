@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <form action="enviado.html" method="post" href="enviado.html">
+        <h2>Vámonos de paseo juntos</h2>
+        <fieldset>
+            <legend>Tus datos perrunos</legend>
+            <p>
+                <label for="nombre_perro">Nombre:</label>
+                <br>
+             <input type="text" id="nombre_perro" name="nombre_perro" maxlength="120" size="30" required></input>
+            <!-- De puertas para fuera el identificador es name y de puertas para dentro es id -->
+         </br>
+            </p>
+            <p>
+                <label for="raza">Raza:</label>
+                <br>
+             <input type="text" id="raza" name="raza" maxlength="120" size="30" required></input>
+         </br>
+            </p>
+        </fieldset>
+        <fieldset>
+         <legend>Datos de tu humano/a</legend>
+         <p>
+          <label for="nombre">Nombre:</label>
+          <br>
+    
+             <input type="text" id="nombre" name="nombre" maxlength="120" size="30" required></input>
+            <!-- De puertas para fuera el identificador es name y de puertas para dentro es id -->
+         </br>
+          </p>
+         <p>
+          <label for="telefono">Teléfono:</label><br>
+          <input type="text" id="telefono" name="telefono" maxlength="120" size="30" required></input>
+          <!-- Campo de teléfono -->
+         </p>
+         <p>
+          <label for="email_id">Email:</label><br>
+          <input type="text" id="email" name="email" maxlength="120" size="30" required></input>
+         </p>
+        </fieldset>
+        <fieldset>
+         <legend>Elige si buscas paseo o excursión</legend>
+         <p>
+          <label for="model_id" required>Modelo:</label><br>
+          <!-- Menú con 1 opción seleccionable de entre estas: Modelo 1, Modelo 2 y Modelo 3 --> 
+ 
+          <select name="modelo" id="modelo" required>
+             <option value="paseo_individual">Paseo individual</option>
+             <option value="paseo_grupal">Paseo grupal</option>
+             <option value="excursion">Excursión</option></select>
+         </p>
+        </fieldset>
+
+        <fieldset>
+         <legend>¿Qué día quieres pasear con nosotros?</legend>
+         <p>
+          <label for="fecha_id">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" maxlength="120" size="30" required></input>
+
+        </p>
+         <p>
+          <label for="instructions_id"></label><br>
+          Cuando rellenes el formulario nos pondremos en contacto contigo para acordar hora y lugar.
+         </p>
+        </fieldset>
+       
+        <input class="boton" id="enviar" type="submit" value="Enviar" href="enviado.html">
+        <a class="boton" href="formulario.html">Resetear</a>
+        <br>
+        <a class="boton" id="volver" href="index.html">Volver a la página principal</a>
+
+        </form>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Pachorro
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <!-- Navigation Section-->
+    <body>
+        
+        <nav>
+            <a href="#bienvenida">
+                <img id="logo" src="../resources/LogoPachorro.png"/>
+            </a>
+            <ul class="menu">
+                <li><a href="#bienvenida">Bienvenida</a></li>
+                <li><a href="#">Nuestros planazos</a>
+                <ul class="submenu">
+                <li><a href="#birthday">Cumpleaños</a></li>
+                <li><a href="#paseos">Paseos</a></li>
+                    <li><a href="#guarderia">Guardería</a></li>
+            </ul>
+                </li>
+                <li><a href="#conocenos">Conócenos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                
+
+
+            </ul>
+        <section id="bienvenida">
+            <p id="bienvenida_titulo">¡Bienvenido a mi sitio favorito!<p>
+
+            <div class='container_bienvenida' >
+                <div class="grid-item">
+                    <img id="ThorIntro" width="250" src="../resources/thorcumple.jpg">
+                </div>
+                <div  class="grid-item" id="texto_bienvenida"><br>Me llamo Thor. <br> En Pachorro puedes celebrar tu cumpleaños, unirte a paseos con otros perros y sus humanos... <br> ¡O quedarte a dormir unos días y jugamos todo el rato a la pelota!</div>
+        
+        
+        </section>
+
+        <!--Conócenos-->
+
+            <section id="conocenos">
+                <h2 class="tagline"></h2>
+                <section class="contenedor" id="contenedor_familia">
+                    <header class="cabecera">Te presento a mi familia</header>
+                    <img id="fotofam" class="foto_contenedor" src="../resources/fotofam.jpg">
+                    <p class="texto_contenedor"><strong>Pasean</strong> y <strong>juegan</strong> mucho y todo el rato te dan <strong>mimos</strong>. Les encanta cuidar de perros y por eso crearon esta guardería. ¡Vivimos en medio del campo para poder correr todo el rato!</p>
+                </section>
+
+                <form>
+                    <fieldset>
+                        <legend><strong>Mándanos un mensaje</strong></legend>
+                        <p>
+                            <label for="nombre">Tu nombre:</label>
+                            <br>
+                         <input type="text" id="nombre" name="nombre" maxlength="120" size="30" required></input>
+                        <!-- De puertas para fuera el identificador es name y de puertas para dentro es id -->
+                     </br>
+                        </p>
+                        <p>
+                            <label for="email">Tu Email:</label>
+                            <br>
+                         <input type="text" id="email" name="email" maxlength="120" size="30" required></input>
+                     </br>
+                     <p>
+                        <label>Cuéntanos en qué te podemos ayudar.</label>                
+                        <br>
+                        <textarea id="mensaje" cols="40" rows="10"></textarea>
+                        </br>
+                        </p>
+                    </fieldset>
+                    <input class="boton" id="enviar" type="submit" value="Enviar" href="#contacto_enviado">
+                    <p id="contacto_enviado">¡Gracias por escribirnos! Te responderemos en los próximos días.</p>
+
+                </form>
+            </section>
+
+            <!--Reseñas-->
+
+            <section id="resenas">
+                <h2 class="tagline">Nuestros huéspedes nos han dejado aquí comentarios para ti:</h2>
+
+                <section class="contenedor">
+                    <header class="cabecera">Pancho - Springer Spaniel & Influencer </header>
+                    <img id="foto_pancho" class="foto_contenedor" src="../resources/pancho.jpg">
+                    <p class="texto_contenedor">
+                        <a href="https://www.instagram.com/loving.pancho/">
+                            <img width=auto height=auto id="logo_instagram" src="../resources/instagram.jpg">
+                            </a>
+                        ¡Me encanta cuando mis padres se van porque me quedo en Pachorro! Siempre me dan premios ricos y todo el rato encuentro palos chulos. Pero mi parte favorita son los paseos.
+                    </p>
+                </section>
+
+                <br>
+                <section class="contenedor">
+                    <header class="cabecera">Bubu - Caniche - "Perro ladrador, poco mordedor"</header>
+                    <img width=auto height=auto id="foto_bubu" class="foto_contenedor" src="../resources/bubu_pelota.jpg">
+                    <p id="texto_bubu" class="texto_contenedor">Cuando me quiero echar un siesta nadie me molesta, y cuando quiero jugar, ¡siempre hay algo divertido que hacer! <br> Yo celebro mi cumpleaños aquí todos los años. ¡Hacen las fiestas más perrunas!</p>
+                </section>
+
+                <br>
+                <section class="contenedor">
+                    <header class="cabecera">Merlín - Schauzer - El jefe de la casa</header>
+                    <img width=auto height=auto id="foto_merlin" class="foto_contenedor" src="../resources/foto_merlin.png">
+                    <p id="texto_merlin" class="texto_contenedor">Al principio echaba mucho de menos mi casa y a mi familia, así que me costó adaptarme. Pero en Pachorro en seguida se ganaron mi confianza y acabé jugando con todos. ¡Los días se pasaron volando! ¡Ojalá volver pronto!</p>
+                </section>
+            </section>
+            <!--Nuestros Planazos-->
+
+            <!--Cumpleaños-->
+            <section id="birthday">
+                    <p>Los cumpleaños perrunos tienen 7 veces más valor que los humanos. <br>¡Celebra el tuyo con nosotros!
+                    </p>
+                    <p>¡Llámanos para organizar tu cumple!</p>
+                    <video id="video_tarta"  autoplay loop muted width="500" height="300" src="../resources/video_tarta.mp4">
+                </section>
+
+
+            <!--Paseos-->
+            <section id="paseos">
+                <p>Podemos darte un súper paseo todos los días. <br> Además, organizamos excursiones todos los findes de semana. <br> Palos, flores, ríos, charcos...<br>¡Apúntate a correr libre por el campo!</p>
+                <div>
+                    <img widht="500" height="300" id="pancho_flores" src="../resources/pancho_flores.jpg">
+                </div>
+                <a class="boton" href="./formulario.html">Pulsa aquí para organizar nuestro paseo</a>                
+            </section>                
+            
+            <!--Guarderia-->
+            <section id="guarderia">
+                <iframe width="800" height="1000" src="estancia.html" frameborder="0"></iframe>
+            </section>
+
+        </nav>
+    
+    </body>
+</html>

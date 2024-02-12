@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #264e70;
+    font-family:'Roboto';
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 15px;
+  }
+
+a:hover {
+    background-color: #fbbf76;
+}
+#enviar:hover{
+    background-color: #fbbf76;
+    font-size: 15px;
+
+}
+#resetear:target, #volver:target{
+  display: block;
+}
+
+
+input:user-invalid {
+    border: 2px #ffdaad;
+    box-shadow: 0 0 2px #ffdaad;
+    outline: #ffdaad;
+}
+a {
+    font-family: sans-serif;
+    color: white;
+    background-color: #ffdaad;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#enviar{
+    font-family: 'Roboto';
+    color: white;
+    background-color: #ffdaad;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: #ffdaad;
+    border: #ffdaad;    
+
+    font-size: 15px;
+}
+input[type="text"]:valid {
+border: 2px rgb(158, 245, 158);
+box-shadow: 0 0 2px rgb(158, 245, 158);
+outline:solid rgb(158, 245, 158);
+}
+
+/* input{
+    font-family: sans-serif;
+    color: white;
+    background-color: #ffdaad;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border:#f8c688
+} */
+select{
+    font-family: sans-serif;
+    color: #264e70;
+    /* background-color: #ffdaad; */
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* border:#ffdaad */
+}
