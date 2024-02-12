@@ -1,4 +1,4 @@
-![LogoPachorro](https://github.com/AlejandraMalia/p2/src/resources/LogoPachorro.png)
+![LogoPachorro](https://github.com/AlejandraMalia/p2/blob/main/src/resources/LogoPachorro.png)
 
 # Se ha creado una página web de la guardería de perros "Pachorro"
 
